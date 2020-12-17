@@ -1,0 +1,89 @@
+/* Basic styles for button */
+*:focus, input, button, textarea {
+    outline: none !important;
+}
+a:hover, .btn:hover {
+    text-decoration: none;
+    outline: none;
+    outline: 0;
+}
+//==========Button có hover==========//
+$btn-colors: (
+    //"name-class" : (bg, text, hover)
+    "red": ($red, $white, $red-dark),
+    "gray": ($gray, #666, $gray-dark),
+    "blue": ($blue, $white, $blue-dark),
+    "white": ($white, $blue, $gray-dark),
+    "green": ($green, $white, $green-dark),
+    "black": ($black, $white, $black-dark),
+);
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+
+    //font-size: 0.875rem;
+    //line-height: 1;
+    //padding: .5rem 1rem .4rem;
+    &.btn-rounded {
+        border-radius: 50rem !important;
+    }
+    &-block {
+        width: 100%;
+    }
+    &:not(:first-of-type) {
+        margin-left: 5px;
+    }
+    &-xs {
+        padding: 0.35rem 0.75rem;
+        font-size: 0.625rem;
+    }
+    &-sm {
+        font-size: 0.75rem;
+    }
+    &-lg {
+        font-size: 1.3rem;
+    }
+    &:not(:disabled):not(.disabled){
+        cursor: pointer;
+    }
+}
+
+//Border full color
+@each $class, $value in $btn-colors {
+    $bg: nth($value, 1);
+    $text: nth($value, 2);
+    $hover: nth($value, 3);
+    .btn-#{$class} {
+        background: #{$bg};
+        color: #{$text} !important;
+        border-color: #{$bg};
+        &:hover{
+            background-color: $hover;
+            border-color: $hover;
+        }
+    }
+}
+//Border outline
+@each $class, $value in $btn-colors {
+    $color: nth($value, 1);
+    .btn-outline-#{$class} {
+        color: #{$color};
+        border-color: #{$color};
+        &:hover{
+            color: #fff;
+            background-color: $color;
+        }
+    }
+}

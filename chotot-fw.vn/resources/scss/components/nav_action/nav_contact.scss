@@ -1,0 +1,45 @@
+.nav-contact {
+    position: fixed;
+    left: 10%;
+    transform: translate(-50%, -8%);
+    background: #333333;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 25px;
+    z-index: 999;
+    bottom: 10px;
+    display: flex;
+    align-content: center;
+    padding: 10px 20px;
+    i {
+        font-size: 36px;
+        height: 100%;
+        align-self: center;
+        margin-right: 10px;
+    }
+    a {
+        display: block;
+        font-weight: 700;
+        animation: my .7s infinite;
+    }
+}
+@keyframes my {
+    0% {
+        color: #ffe018;
+    }
+    50% {
+        color: #fff;
+    }
+    100% {
+        color: #ffe018;
+    }
+}
+@media (max-width: 767.98px) {
+
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+@media (min-width: 992px) {
+
+}

@@ -1,0 +1,24 @@
+//Base
+@import "./reset";
+@import "./variables";
+@import "./font";
+@import "./base";
+@import "./helper";
+@import "./all";
+@import "./utilities";
+@import "./label";
+
+
+//Components
+//@import "../components/nav_action/nav_action";
+@import "../components/nav_action/nav_action_1";
+@import "../components/nav_action/nav_contact";
+@import "../../scss/components/nav_side";
+@import "../../scss/components/form_contact";
+@import "../../scss/components/search_side";
+@import "../../plugins/auto-complete/style";
+
+//Plugins
+@import "~microtip/microtip.css";
+@import "./../icon/fontawesome5/scss/fontawesome";
+//@import "../.././plugins/select2/select2_custom";

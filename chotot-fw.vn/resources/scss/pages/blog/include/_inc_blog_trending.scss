@@ -1,0 +1,14 @@
+.blog-trending{
+    background-color: #fff;
+    border-radius: $radius;
+    overflow: hidden;
+    .first-new {
+        a{
+            width: 100%;
+            height: 300px;
+        }
+    }
+    .first-info {
+        padding: 10px;
+    }
+}

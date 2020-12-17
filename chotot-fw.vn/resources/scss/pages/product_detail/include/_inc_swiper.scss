@@ -1,0 +1,55 @@
+.swiper-container {
+    width: 100%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    img{
+        object-fit: cover;
+    }
+}
+
+.gallery-top {
+    position: relative;
+    height: 80%;
+}
+
+.gallery-thumbs {
+    position: relative;
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+}
+@media (max-width: 767.98px) {
+    .swiper-container {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .gallery-top {
+        height: 70%;
+    }
+
+    .gallery-thumbs {
+        height: 30%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+@media (min-width: 992px) {
+
+}

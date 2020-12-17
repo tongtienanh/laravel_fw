@@ -1,0 +1,113 @@
+.blog-show-grid {
+    background-color: $bg-body;
+}
+.blog-item {
+    position: relative;
+    box-shadow: 0 2px 8px rgba(3, 44, 71, 0.12);
+    border-radius: $radius;
+    &:hover {
+        &:before {
+            content: "";
+            position: absolute;
+            width: calc(100% + 20px);
+            height: calc(100% + 20px);
+            top: -10px;
+            box-shadow: 0 0 2px 0 #c4c7cc;
+            left: -10px;
+            z-index: -10;
+            display: inline-block;
+        }
+    }
+    .blog-top {
+        position: relative;
+        border-radius: $radius $radius 0 0;
+        display: block;
+        overflow: hidden;
+        height: 150px;
+        a {
+            height: 100%;
+            display: inline-block;
+            width: 100%;
+        }
+        img {
+            object-fit: cover;
+        }
+    }
+    .blog-body {
+        padding: 10px;
+        .date {
+            color: $color-main;
+            width: 100%;
+            margin-bottom: 5px;
+            font-size: 12px;
+        }
+        .article {
+            overflow: hidden;
+            color: inherit;
+            line-height: 1.4;
+            display: block;
+            font-weight: 600;
+            font-size: 17px;
+            margin-bottom: 5px;
+            a {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2; /* number of lines to show */
+                -webkit-box-orient: vertical;
+            }
+        }
+        .description {
+            color: $text-sub;
+            font-size: 14px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3; /* number of lines to show */
+            -webkit-box-orient: vertical;
+            p {
+                line-height: 1.8em;
+            }
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .blog-show-grid {
+        [class^="col-"] + [class^="col-"] {
+            padding-top: 15px;
+        }
+    }
+    .blog-item {
+        display: flex;
+        .blog-top {
+            flex: 0 0 120px;
+            margin-right: 10px;
+            margin-bottom: 0;
+            height: 100px;
+            img {
+                border-radius: $radius;
+            }
+        }
+        .blog-body {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: flex-end;
+            .date {
+                margin: 0;
+            }
+            .article {
+                font-weight: normal;
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .blog-item {
+        margin-bottom: 25px;
+    }
+}
+@media (min-width: 992px) {
+
+}

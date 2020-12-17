@@ -1,0 +1,29 @@
+//Base
+@import "../../bases/common_import";
+@import "../../bases/grid";
+@import "../../bases/box";
+@import "../../bases/button";
+@import "../../bases/form";
+@import "../../bases/bg";
+@import "../../bases/utilities";
+
+//Plugins
+@import "../../../plugins/select2/select2_custom";
+
+//Components global
+@import "../../components/header/main";
+@import "../../components/menu";
+@import "../../components/footer/main";
+
+//Components local
+@import "../../components/top_bar";
+@import "../../components/product/item";
+@import "../../components/product/item_search";
+@import "../../components/paginate";
+
+//Include
+@import "include/inc_result_search";
+//@import "include/inc_filter_side";
+
+//Widgets
+@import "../../widgets/wg_type_car";

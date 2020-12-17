@@ -1,0 +1,29 @@
+.wg-type-car{
+    margin-top: 15px;
+    border: 1px solid $border;
+    padding: 10px;
+    .col-12{
+        & + .col-12{
+            .item{
+                border-top: 1px dashed $border;
+                padding-top: 10px;
+            }
+        }
+    }
+    .item{
+        display: flex;
+        align-items: center;
+        padding: 0 5px;
+        &.active{
+            box-shadow: 0 2px 8px rgba(3, 44, 71, 0.12);
+        }
+    }
+    .wtc-image{
+        flex: 0 0 80px;
+        height: 50px;
+        margin-right: 10px;
+    }
+    .wtc-title {
+
+    }
+}

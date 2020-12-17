@@ -1,0 +1,22 @@
+.box-breadcrumb {
+    .breadcrumbs {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0.75rem 0;
+        .breadcrumb-item {
+            & + .breadcrumb-item:before {
+                padding-left: .5rem;
+                display: inline-block;
+                padding-right: .5rem;
+                color: #6c757d;
+                content: "/";
+            }
+        }
+    }
+    a {
+        color: #a8b2b6;
+        &:hover{
+            color: #000;
+        }
+    }
+}

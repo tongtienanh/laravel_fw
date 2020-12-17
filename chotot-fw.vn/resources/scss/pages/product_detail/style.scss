@@ -1,0 +1,34 @@
+//Base
+@import "../../bases/common_import";
+@import "../../bases/grid";
+@import "../../bases/box";
+@import "../../bases/button";
+@import "../../bases/form";
+
+//Plugins
+@import '~swiper/swiper-bundle.css';
+@import "../../../plugins/view-more/showmore-default";
+@import "../../../plugins/select2/select2_custom";
+
+//Components global
+@import "../../components/header/main";
+@import "../../components/menu";
+@import "../../components/footer/main";
+
+//Components local
+@import "../../components/breadcrumb";
+@import "../../components/top_bar";
+@import "../../components/product/item";
+@import "../../components/box_widget";
+@import "../../components/nav_tab";
+@import "../../components/share_social";
+
+//Include
+@import "include/inc_product_detail";
+@import "include/inc_swiper";
+@import "include/inc_info_basic";
+
+//Widget
+@import "../../widgets/wg_customer_contact";
+@import "../../widgets/wg_sale_contact";
+

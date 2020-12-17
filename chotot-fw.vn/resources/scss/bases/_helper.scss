@@ -1,0 +1,23 @@
+.text-collapse {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.limit-line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--line)
+}
+.hide {display: none}
+.show {display: inline-block;}
+.no-scroll {
+    overflow: hidden;
+}
+img.image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}

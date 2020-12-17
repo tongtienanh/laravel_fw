@@ -1,0 +1,31 @@
+.blog-dashboard {
+
+}
+.blog-bars {
+    border-radius: $radius;
+    background-color: #fff;
+    a {
+        color: #fff;
+    }
+    .box-top {
+        background-color: $bg-sub;
+        border-radius: $radius $radius 0 0;
+        padding: 0.75rem 1.25rem;
+        text-transform: uppercase;
+        font-size: 125%;
+        margin-bottom: 0;
+        &.bg-main{
+            background-color: $color-main;
+            .title{
+                color: #fff;
+            }
+        }
+        .title {
+            margin-bottom: 0;
+        }
+    }
+    .box-body{
+        padding: 10px;
+    }
+}
+

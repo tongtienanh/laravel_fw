@@ -1,0 +1,19 @@
+.swiper-banner {
+    img{
+        height: 450px;
+        object-fit: cover;
+    }
+}
+@media (max-width: 767.98px) {
+    .swiper-banner {
+        img{
+            height: 200px;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+@media (min-width: 992px) {
+
+}

@@ -1,0 +1,19 @@
+.customer-contact{
+    background-color: $bg-extra;
+    //position: -webkit-sticky; /* Safari */
+    //position: sticky;
+    //top: 110px;
+    //z-index: 1;
+    color: $text-sub;
+    .box-success{
+        display: none;
+        text-align: center;
+        .icon-top{
+            color: #48a747;
+            font-size: 50px;
+        }
+        >p{
+            margin-bottom: 15px;
+        }
+    }
+}

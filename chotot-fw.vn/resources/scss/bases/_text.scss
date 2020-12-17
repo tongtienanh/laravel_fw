@@ -1,0 +1,40 @@
+$text-red: #dd4b39;
+$text-yellow: #f39c12;
+$text-aqua: #00c0ef;
+$text-blue: #0073b7;
+$text-black: #111;
+$text-light-blue: #3c8dbc;
+$text-green: #00a65a;
+$text-gray: #d2d6de;
+$text-navy: #001F3F;
+$text-teal: #39CCCC;
+$text-olive: #3D9970;
+$text-lime: #01FF70;
+$text-orange: #FF851B;
+$text-fuchsia: #F012BE;
+$text-purple: #605ca8;
+$text-maroon: #D81B60;
+
+$colors: (
+    "text-red" : $text-red,
+    "text-yellow" : $text-yellow,
+    "text-aqua" : $text-aqua,
+    "text-blue" : $text-blue,
+    "text-black" : $text-black,
+    "text-light-blue" : $text-light-blue,
+    "text-green" : $text-green,
+    "text-gray" : $text-gray,
+    "text-navy" : $text-navy,
+    "text-teal" : $text-teal,
+    "text-olive" : $text-olive,
+    "text-lime" : $text-lime,
+    "text-orange" : $text-orange,
+    "text-fuchsia" : $text-fuchsia,
+    "text-purple" : $text-purple,
+    "text-maroon" : $text-maroon,
+);
+@each $name, $color in $colors {
+    .#{$name} {
+        color: #{$color};
+    }
+}

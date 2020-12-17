@@ -1,0 +1,96 @@
+.product-item-search {
+    padding-bottom: 15px;
+    .pis-wrapper{
+        display: flex;
+    }
+    & + .product-item-search {
+        padding-top: 15px;
+        border-top: 1px solid $border;
+    }
+    .pis-title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.4em;
+        a{
+            white-space: nowrap;
+            overflow: hidden;
+            display: block;
+            text-overflow: ellipsis;
+        }
+    }
+    .pis-avatar {
+        position: relative;
+        flex: 0 0 230px;
+        height: 150px;
+        overflow: hidden;
+        text-align: center;
+        background-color: #f7f7f7;
+        margin-right: 10px;
+        border-radius: $radius;
+        a{
+            width: 100%;
+        }
+        a:first-child {
+            height: 100%;
+        }
+        img {
+            object-fit: cover;
+        }
+    }
+    .pis-info {
+        display: flex;
+        flex-grow: 1;
+        .left {
+            flex: 0 0 85%;
+            .list-entry {
+                margin-top: 10px;
+                .col-12{
+                    margin-bottom: 5px;
+                }
+                i {
+                    color: #666;
+                    width: 20px;
+                }
+                //span {
+                //    color: #222;
+                //}
+            }
+        }
+        .right {
+            flex: 0 0 15%;
+            text-align: right;
+            .call {
+                margin-top: 5px;
+            }
+        }
+
+    }
+}
+@media (max-width: 767.98px) {
+    .product-item-search {
+        .pis-title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .pis-avatar {
+            height: 96px;
+            flex: 0 0 130px;
+            margin-right: 15px;
+        }
+        .pis-info {
+            .left {
+                flex: 0 0 70%;
+
+            }
+            .right {
+                flex: 0 0 30%;
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+@media (min-width: 992px) {
+
+}

@@ -1,0 +1,45 @@
+.nav-tab {
+    margin-bottom: 30px;
+    overflow-x: hidden;
+    //color: $text-sub;
+    ul.nt-tab {
+        overflow-x: auto;
+        overflow-y: hidden;
+        flex-wrap: nowrap;
+        margin-bottom: 5px;
+        background: $bg-sub;
+        display: flex;
+        > li {
+            white-space: nowrap;
+            margin-bottom: -1px;
+            display: inline-block;
+            a {
+                cursor: pointer;
+                padding: 15px 25px 10px 25px;
+                font-weight: 600;
+                font-size: 14px;
+                display: inline-block;
+            }
+            &.active {
+                > a {
+                    color: #fff;
+                    background: #222;
+                    border-bottom: 3px solid #d2583e;
+                }
+            }
+        }
+    }
+    .nt-content {
+        background: #fff;
+        padding: 10px;
+        .tab-content {
+            &:not(:first-of-type) {
+                display: none;
+            }
+            img {
+                width: 100% !important;
+                height: 100%;
+            }
+        }
+    }
+}

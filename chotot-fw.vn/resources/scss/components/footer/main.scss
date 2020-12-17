@@ -1,0 +1,52 @@
+.footer {
+    background: #1f252e url(https://autoimage.templines.org/wp-content/uploads/2018/10/fbg.jpg?id=10593) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 100%;
+    *{
+        color: #ccc;
+    }
+    .wrapper {
+        padding: 60px 0;
+        .logo{
+            max-width: 180px;
+            margin-bottom: 15px;
+        }
+        .item-list{
+            h3{
+                position: relative;
+                padding-bottom: 0;
+                margin-bottom: 25px;
+                font-size: 16px !important;
+                text-transform: uppercase;
+                color: #fff;
+            }
+            ul{
+                li{
+                    padding-bottom: 11px;
+                }
+            }
+        }
+    }
+    .bottom{
+        padding: 20px 10px;
+        background-color: #131d27;
+        text-align: center;
+        p{
+            color: #ccc !important;
+        }
+    }
+}
+.footer {
+    @media (max-width: 767.98px) {
+        //position: absolute;
+        //bottom: 0;
+    }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+
+    }
+    @media (min-width: 992px) {
+
+    }
+}

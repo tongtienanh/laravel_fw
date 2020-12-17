@@ -1,0 +1,37 @@
+.sale-info {
+    color: $text-sub;
+    .si-title {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    .si-intro {
+        margin-bottom: 15px;
+        font-size: 16px;
+        .fa{
+            color: $color-sub;
+            margin-right: 10px;
+        }
+    }
+    .si-contact {
+        .red, a {
+            color: #f44336;
+        }
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 150%;
+    }
+    .avatar {
+        height: 300px;
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+        img {
+            border-radius: 50%;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+}

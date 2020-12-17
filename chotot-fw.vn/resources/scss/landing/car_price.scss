@@ -1,0 +1,189 @@
+//Base
+@import "../bases/common_import";
+@import "../bases/grid";
+@import "../bases/box";
+@import "../bases/button";
+@import "../bases/form";
+//Plugins
+@import "../../plugins/select2/select2_custom";
+@import "../../plugins/modal/css/modal";
+//Components global
+@import "../components/top_bar";
+@import "../components/header/main";
+@import "../components/menu";
+@import "../components/footer/main";
+
+//Components local
+
+//Include
+@import "../landing/element/inc_car_list";
+
+.price-intro {
+    .pi-top {
+        margin-bottom: 20px;
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: $color-main;
+            text-align: center;
+            margin-bottom: 0;
+        }
+        p {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }
+    .pi-notice {
+        &:before {
+            position: absolute;
+            background: no-repeat url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAXCAYAAAARIY8tAAABHElEQVRIx2NgGGjwv4GB6f9eFqv/B1gz/x9gq/y/nzXl/342HeoYvpfF6f8B9jv/D7L/x8AH2I7938OmRZ7BDAyMQIOnYjUYBbP9/L+fvYB0Cw6yNRM2HMWiMOIN38OgBNTwizQL2J/9X8XASazr60k0HOaLICItYN9JlgX7WXuI9cEZsiw4wDafOAsOsG0mzwdsLcRaUEuWBfvYvYmzYD+DDBmp6B4oxxOfVA+wlZGQev7+38/iQEZOZu0lwvBfQHWx5JdFB9j340857JMoK+wI5Qli0z6euFhLIIjqKfWBKtCQamAab8DE7CX/tzGIMgx6AHRtBFYfHGBxpI4FB9mW4Aj/cupYsJNBERjZVSiuP8he/H8Hg9CgCGIAiPxM1oDU6gkAAAAASUVORK5CYII=);
+            content: '';
+            height: 24px;
+            width: 24px;
+            margin-left: -34px;
+        }
+        margin-bottom: 15px;
+        background-color: #f5f6f7;
+        border-left: 3px solid #ff6a00;
+        border-radius: 4px;
+        color: #3c4043;
+        font-weight: 500;
+        font-size: 16px;
+        padding: 12px 10px 12px 50px;
+    }
+    ol {
+        counter-reset: counter;
+        list-style: none;
+        padding-left: 40px;
+        li {
+            & + li {
+                margin-top: 15px;
+            }
+            font-size: 17px;
+            counter-increment: counter;
+            position: relative;
+            &:before {
+                content: counter(counter);
+                color: #fff;
+                font-size: 16px;
+                font-weight: bold;
+                position: absolute;
+                --size: 26px;
+                left: calc(-1 * var(--size) - 10px);
+                line-height: var(--size);
+                width: var(--size);
+                height: var(--size);
+                top: 0;
+                //transform: rotate(-10deg);
+                background: #4db848;
+                border-radius: 50%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.price-list {
+    margin-top: 60px;
+    .item {
+        & + .item {
+            padding-top: 15px;
+            border-top: 1px solid #dedede;
+            margin-top: 15px;
+        }
+        .title {
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        .car-image {
+
+        }
+
+        .version-list {
+            .elem {
+                align-items: center;
+                padding-bottom: 10px;
+                border-bottom: 1px dashed $border;
+                display: flex;
+                justify-content: space-between;
+                font-size: 16px;
+                & + .elem{
+                    margin-top: 10px;
+                }
+                .el-name {
+                    flex: 0 0 50%;
+                    color: #222;
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+                .el-price {
+                    flex: 0 0 40%;
+                    color: $red;
+                    font-weight: 500;
+                }
+                .el-action {
+                    flex: 0 0 10%;
+                }
+            }
+        }
+        .action-list {
+            margin-top: 15px;
+        }
+    }
+}
+.price-seo {
+    h1, h2, h3, h4, h5, h6, p {
+        margin-bottom: 1rem;
+    }
+    h3 {
+        font-weight: 500;
+        font-size: 22px;
+    }
+    figure figcaption, .caption {
+        color: #555;
+        font-size: 17px;
+        font-style: italic;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+    figure {
+        margin: 0 0 1rem;
+    }
+    img {
+        width: 100%;
+    }
+    .figure.fluid {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .price-list {
+        .item {
+            .version-list {
+                .elem {
+                    .el-name {
+                        flex: 0 0 70%;
+                    }
+                    .el-price {
+                        flex: 0 0 30%;
+                        text-align: right;
+                    }
+                }
+            }
+            .action-list {
+                text-align: right;
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+@media (min-width: 992px) {
+
+}
+

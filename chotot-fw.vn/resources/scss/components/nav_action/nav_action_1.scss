@@ -1,0 +1,66 @@
+.nav-action-1 {
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    z-index: 10;
+    bottom: 0;
+    padding: 2px 0;
+    border-top: 1px solid #f2f2f2;
+    ul{
+        padding: 0 10px;
+        display: flex;
+        justify-content: space-between;
+        li{
+            &.icon_mb {
+                position: relative;
+                top: -23px;
+            }
+            a {
+                border: none;
+                padding: 3px;
+                display: block;
+                border-radius: $radius;
+                text-align: center;
+                font-size: 10px;
+                line-height: 15px;
+                color: #515151;
+                font-weight: 700;
+                max-width: 72.19px;
+                max-height: 54px;
+                text-decoration: none;
+
+                .icon{
+                    width: 36px;
+                    height: 36px;
+                    display: block;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    margin: 0 auto;
+                    background-position: center center;
+                }
+                .icon_local {
+                    background-image: url(../images/icon/map.svg);
+                }
+                .icon_zalo {
+                    background-image: url(../images/icon/zalo.svg);
+                }
+                .icon_call {
+                    width: 54px;
+                    height: 54px;
+                    background-color: #6cb917;
+                    border: 2px solid white;
+                    background-size: 27px;
+                    border-radius: 50%;
+                    margin-bottom: 4px;
+                    background-image: url(../images/icon/call.svg);
+                }
+                .icon_mess {
+                    background-image: url(../images/icon/mess.svg);
+                }
+                .icon_sms {
+                    background-image: url(../images/icon/sms.svg);
+                }
+            }
+        }
+    }
+}

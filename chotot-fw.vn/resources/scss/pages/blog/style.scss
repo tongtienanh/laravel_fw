@@ -1,0 +1,28 @@
+//Base
+@import "../../bases/common_import";
+@import "../../bases/grid";
+@import "../../bases/box";
+@import "../../bases/button";
+@import "../../bases/form";
+body{
+    background-color: #e9ebee;
+}
+//Plugins
+@import "../../../plugins/select2/select2_custom";
+@import "../../../plugins/modal/css/modal";
+
+//Components global
+@import "../../components/top_bar";
+@import "../../components/header/main";
+@import "../../components/menu";
+@import "../../components/footer/main";
+
+//Components local
+
+//Include
+@import "../../pages/blog/include/inc_blog_element";
+@import "../../pages/blog/include/inc_blog_trending";
+@import "../../pages/blog/include/inc_blog_list";
+@import "../../pages/blog/include/inc_blog_new";
+@import "../../pages/blog/include/inc_blog_detail";
+
